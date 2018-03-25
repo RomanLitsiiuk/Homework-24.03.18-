@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+fieldset,
+form,
+menu,
+select,
+textarea,
+input,
+button,
+optgroup {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  background-color: transparent;
+}
+img,
+input,
+button {
+  border: 0;
+}
+input {
+  border-radius: 0;
+}
+input,
+textarea,
+select,
+button,
+a:active,
+a:hover {
+  outline: 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+}
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+td,
+th {
+  padding: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+main {
+  display: block;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1 0 auto;
+}
+.menu {
+  display: flex;
+  margin: 10px 0;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  background: #F0F0F0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
+}
+.menu li a {
+  display: block;
+  padding: 10px 11px;
+  text-decoration: none;
+  color: #000000;
+  box-sizing: border-box;
+}
+.menu li a:hover {
+  border-right: 1px solid #BDBDBD;
+  border-left: 1px solid #BDBDBD;
+  padding: 11px 10px 9px 10px;
+}

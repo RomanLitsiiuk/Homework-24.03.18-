@@ -1,0 +1,22 @@
+.menu {
+	display: flex;
+	margin: 10px 0;
+	border: 1px solid @border-color;
+	border-radius: 5px;
+	background: @nav-background;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
+	li {
+		a {
+			display: block;
+			padding: 10px 11px;
+			text-decoration: none;
+			color: @nav-textcolor;
+			box-sizing: border-box;
+			&:hover {
+				border-right: 1px solid @border-color;
+				border-left: 1px solid @border-color;
+				padding: 11px 10px 9px 10px;
+			}
+		}
+	}
+}
