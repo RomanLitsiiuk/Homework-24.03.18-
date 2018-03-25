@@ -80,9 +80,10 @@ main {
   display: block;
 }
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   box-sizing: border-box;
+  width: 100%;
 }
 html,
 body {
@@ -100,21 +101,36 @@ body {
 }
 .menu {
   display: flex;
+  flex-wrap: wrap;
   margin: 10px 0;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #C4C4C4;
+  border-bottom: 2px solid #C4C4C4;
   border-radius: 5px;
   background: #F0F0F0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.03) inset;
+}
+@media screen and (max-width: 480px) {
+  .menu {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu li {
+    flex: 1 0 33%;
+    align-items: flex-start;
+  }
 }
 .menu li a {
   display: block;
-  padding: 10px 11px;
+  padding: 12px 12px;
   text-decoration: none;
-  color: #000000;
+  color: #6B6B6B;
   box-sizing: border-box;
 }
 .menu li a:hover {
-  border-right: 1px solid #BDBDBD;
-  border-left: 1px solid #BDBDBD;
-  padding: 11px 10px 9px 10px;
+  border-right: 1px solid #C4C4C4;
+  border-left: 1px solid #C4C4C4;
+  padding: 13px 11px 11px 11px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) inset;
+  transition: box-shadow 0.1s;
 }
