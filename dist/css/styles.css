@@ -104,7 +104,7 @@ body {
 .main {
   flex: 1 0 auto;
 }
-.footer {
+.main-footer {
   flex: 0 0 auto;
 }
 .menu {
@@ -149,7 +149,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: 500px;
   justify-content: center;
   align-items: center;
 }
@@ -189,6 +189,7 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  padding: 20px 0 10px 0;
 }
 .CardSection-card {
   flex: 1 0 calc(33.33333333%);
@@ -246,4 +247,39 @@ body {
 }
 .ColumnsSection-column .button {
   margin: 10px 0;
+}
+.footer {
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  border-top: 1px solid #C4C4C4;
+}
+.footer-topSection {
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-topSection--p {
+  padding: 0 20px;
+  font-weight: 500;
+}
+.footer-h2 {
+  font-size: 200%;
+  font-weight: 400;
+  text-align: center;
+}
+.footer-clients {
+  display: flex;
+}
+.footer-clients--icon {
+  flex: 1 0 calc(-3.33333333%);
+  padding: 10px;
+}
+.footer-clients--icon img {
+  width: 100%;
 }
