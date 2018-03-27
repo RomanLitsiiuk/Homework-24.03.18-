@@ -2,25 +2,26 @@
 	.container;
 	display: flex;
 	flex-wrap: wrap;
-	.CardSection-card {
-		flex: 1 0 33%;
+	&-card {
+		flex: 1 0 calc(100% / 3);
 		display: flex;
 		align-items: flex-start;
 		padding-bottom: 20px;
-		.CardSection-card--image {
-			padding: 2px 10px;
+		&--image {
+			padding: 2px 9px;
 			img {
 				width: 32px;
 			}
 		}
-		.CardSection-card--text {
+		&--text {
 			h4 {
 				font-weight: 500;
 				padding-left: 10px;
+				padding-bottom: 5px;
 			}
 			p {
-				font-size: 80%;
-				padding: 10px;
+				font-size: 78%;
+				padding: 10px 20px 10px 10px;
 			}
 		}
 	}
