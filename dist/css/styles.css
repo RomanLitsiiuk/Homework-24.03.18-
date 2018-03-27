@@ -147,9 +147,6 @@ body {
   height: 400px;
   justify-content: center;
   align-items: center;
-  /*&-buttonBlock {
-		display: flex;
-	}*/
 }
 .TitleSection-header1 {
   padding: 20px 0 15px 0;
@@ -176,5 +173,33 @@ body {
 .button:hover {
   background: #4D95FE;
   color: #F0F0F0;
-  box-shadow: 0 0 10px rgba(0, 0, 255, 0.2) inset;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.3) inset;
+}
+.CardSection {
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.CardSection .CardSection-card {
+  flex: 1 0 33%;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+.CardSection .CardSection-card .CardSection-card--image {
+  padding: 2px 10px;
+}
+.CardSection .CardSection-card .CardSection-card--image img {
+  width: 32px;
+}
+.CardSection .CardSection-card .CardSection-card--text h4 {
+  font-weight: 500;
+  padding-left: 10px;
+}
+.CardSection .CardSection-card .CardSection-card--text p {
+  font-size: 80%;
+  padding: 10px;
 }

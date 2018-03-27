@@ -1,0 +1,27 @@
+.CardSection {
+	.container;
+	display: flex;
+	flex-wrap: wrap;
+	.CardSection-card {
+		flex: 1 0 33%;
+		display: flex;
+		align-items: flex-start;
+		padding-bottom: 20px;
+		.CardSection-card--image {
+			padding: 2px 10px;
+			img {
+				width: 32px;
+			}
+		}
+		.CardSection-card--text {
+			h4 {
+				font-weight: 500;
+				padding-left: 10px;
+			}
+			p {
+				font-size: 80%;
+				padding: 10px;
+			}
+		}
+	}
+}
