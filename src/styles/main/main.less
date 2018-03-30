@@ -30,7 +30,7 @@ body {
 	&-titleSection {
 		height: 500px;
 
-		&--text {
+		&--textSize {
 			max-width: 600px;
 		}
 	}
@@ -40,8 +40,16 @@ body {
 		flex-wrap: wrap;
 		padding: 20px 0 10px 0;
 
-		&--card {
+		&--cardSize {
 			flex: 1 0 calc(100% / 3);
+		}
+	}
+
+	&-columnSection {
+		display: flex;
+
+		&--columnSize {
+			flex: 1 0 calc(100% / 2 - 20px);
 		}
 	}
 }

@@ -113,7 +113,7 @@ body {
 .Container-titleSection {
   height: 500px;
 }
-.Container-titleSection--text {
+.Container-titleSection--textSize {
   max-width: 600px;
 }
 .Container-cardSection {
@@ -121,8 +121,14 @@ body {
   flex-wrap: wrap;
   padding: 20px 0 10px 0;
 }
-.Container-cardSection--card {
+.Container-cardSection--cardSize {
   flex: 1 0 calc(33.33333333%);
+}
+.Container-columnSection {
+  display: flex;
+}
+.Container-columnSection--columnSize {
+  flex: 1 0 calc(30%);
 }
 .Header {
   display: flex;
@@ -202,36 +208,32 @@ body {
   font-size: 78%;
   padding: 10px 20px 10px 10px;
 }
-.ColumnsSection {
-  display: flex;
-}
-.ColumnsSection-column {
-  flex: 1 0 calc(30%);
+.Column {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
-.ColumnsSection-column--image {
+.Column-image {
   width: 100%;
 }
-.ColumnsSection-column--image img {
+.Column-image img {
   max-width: 100%;
   padding: 10px 0;
 }
-.ColumnsSection-column--h3 {
+.Column-header {
   font-size: 200%;
   font-weight: 400;
   padding: 10px 0;
 }
-.ColumnsSection-column--h4 {
+.Column-subHeader {
   font-size: 120%;
   padding: 10px 0;
 }
-.ColumnsSection-column--text {
+.Column-text {
   font-size: 76%;
   padding: 10px 0;
 }
-.ColumnsSection-column .button {
+.Column .Button {
   margin: 10px 0;
 }
 .footer {
