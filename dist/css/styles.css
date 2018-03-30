@@ -116,6 +116,14 @@ body {
 .Container-titleSection--text {
   max-width: 600px;
 }
+.Container-cardSection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 10px 0;
+}
+.Container-cardSection--card {
+  flex: 1 0 calc(33.33333333%);
+}
 .Header {
   display: flex;
   flex-wrap: wrap;
@@ -174,29 +182,23 @@ body {
   color: #F0F0F0;
   box-shadow: 0 0 10px rgba(0, 0, 255, 0.3) inset;
 }
-.CardSection {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px 0 10px 0;
-}
-.CardSection-card {
-  flex: 1 0 calc(33.33333333%);
+.Card {
   display: flex;
   align-items: flex-start;
   padding-bottom: 20px;
 }
-.CardSection-card--image {
+.Card-image {
   padding: 2px 9px;
 }
-.CardSection-card--image img {
+.Card-image img {
   width: 32px;
 }
-.CardSection-card--text h4 {
+.Card-textHeader {
   font-weight: 500;
   padding-left: 10px;
   padding-bottom: 5px;
 }
-.CardSection-card--text p {
+.Card-text {
   font-size: 78%;
   padding: 10px 20px 10px 10px;
 }
