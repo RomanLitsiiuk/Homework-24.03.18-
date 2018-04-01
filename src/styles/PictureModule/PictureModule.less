@@ -1,0 +1,40 @@
+.PictureModule {
+	display: flex;
+	border-bottom: 1px solid @border-color;
+	padding: 15px 0;
+
+	&--imgOrderLast {
+		order: 2;
+	}
+
+	&-image {
+		flex: 1 0 50%;
+		padding: 10px;
+		box-sizing: border-box;
+
+		&--imgSize {
+			max-width: 100%;
+		}
+	}
+
+	&-textWrap {
+		padding: 10px;
+	}
+
+	&-heading {
+		font-size: 200%;
+		font-weight: 400;
+		padding-bottom: 10px;
+	}
+
+	&-subHeading {
+		font-size: 120%;
+		padding: 15px 0 5px;
+	}
+
+	&-text {
+		font-size: 76%;
+		padding: 10px 0;
+		text-align: justify;
+	}
+}

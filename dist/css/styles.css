@@ -156,7 +156,6 @@ body {
 .TitleSection {
   display: flex;
   flex-direction: column;
-  /*height: 500px;*/
   justify-content: center;
   align-items: center;
 }
@@ -167,7 +166,6 @@ body {
   font-weight: 100;
 }
 .TitleSection-text {
-  /*max-width: 600px;*/
   text-align: center;
   font-weight: 200;
   padding-bottom: 15px;
@@ -208,36 +206,41 @@ body {
   font-size: 78%;
   padding: 10px 20px 10px 10px;
 }
-.Column {
+.PictureModule {
   display: flex;
-  flex-direction: column;
+  border-bottom: 1px solid #C4C4C4;
+  padding: 15px 0;
+}
+.PictureModule--imgOrderLast {
+  order: 2;
+}
+.PictureModule-image {
+  flex: 1 0 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.PictureModule-image--imgSize {
+  max-width: 100%;
+}
+.PictureModule-textWrap {
   padding: 10px;
 }
-.Column-image {
-  width: 100%;
-}
-.Column-image img {
-  max-width: 100%;
-  padding: 10px 0;
-}
-.Column-header {
+.PictureModule-heading {
   font-size: 200%;
   font-weight: 400;
-  padding: 10px 0;
+  padding-bottom: 10px;
 }
-.Column-subHeader {
+.PictureModule-subHeading {
   font-size: 120%;
-  padding: 10px 0;
+  padding: 15px 0 5px;
 }
-.Column-text {
+.PictureModule-text {
   font-size: 76%;
   padding: 10px 0;
-}
-.Column .Button {
-  margin: 10px 0;
+  text-align: justify;
 }
 .footer {
-  border-top: 1px solid #C4C4C4;
+  /*border-top: 1px solid @border-color;*/
 }
 .footer-topSection {
   border: 1px solid #C4C4C4;
