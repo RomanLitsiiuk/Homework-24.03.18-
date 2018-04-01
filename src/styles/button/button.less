@@ -9,9 +9,13 @@
 	background: @button-background;
 	.shadow;
 
+	&--margin {
+		margin: 15px 0;
+	}
+
 	&:hover {
 		background: @button-background--hover;
 		color: @button-textcolor--hover;
-		box-shadow: 0 0 10px rgba(0, 0, 255, 0.3) inset;
+		box-shadow: @button-shadow;
 	}
 }
