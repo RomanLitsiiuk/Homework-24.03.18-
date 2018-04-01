@@ -1,0 +1,16 @@
+.FooterClients {
+	display: flex;
+
+	@media screen and (max-width: 480px) {
+		flex-wrap: wrap;
+	}
+
+	&-icon {
+		flex: 1 0 calc(100% / 6 - 20px);
+		padding: 10px;
+
+		@media screen and (max-width: 480px) {
+			flex: 1 0 calc(100% / 2 - 20px);
+		}
+	}
+}

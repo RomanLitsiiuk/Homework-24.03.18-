@@ -1,0 +1,15 @@
+.PictureSection {
+	display: flex;
+	border-bottom: 1px solid @border-color;
+	padding: 15px 0;
+
+	@media screen and (max-width: 480px) {
+		flex-direction: column;
+	}
+
+	&-image {
+		flex: 1 0 50%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+}

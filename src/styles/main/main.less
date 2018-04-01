@@ -3,16 +3,23 @@ body {
 	height: 100%;
 }
 
-.wrap {
+.MainWrap {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-}
 
-.main {
-	flex: 1 0 auto;
-}
+	&-contentPosition {
+		flex: 1 0 auto;
+	}
 
-.main-footer {
-	flex: 0 0 auto;
+	&-footerPosition {
+		flex: 0 0 auto;
+	}
+
+	&-container {
+		max-width: 960px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		width: 100%;
+	}
 }
