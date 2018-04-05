@@ -7,6 +7,14 @@
 	background: @nav-background;
 	.shadow;
 
+	&-brand {
+		display: block;
+		font-size: 20px;
+		text-decoration: none;
+		color: @nav-textcolor;
+		padding: 9px 12px;
+	}
+
 	&-link {
 		display: block;
 		padding: 12px 12px;
@@ -19,11 +27,7 @@
 			border-left: 1px solid @border-color;
 			padding: 13px 11px 11px 11px;
 			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) inset;
-			transition: box-shadow 0.1s;
+			.transitionShadow;
 		}
-	}
-
-	&--padding {
-		padding: 10px 0;
 	}
 }

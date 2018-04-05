@@ -80,7 +80,10 @@ main {
   display: block;
 }
 .shadow {
-  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.03) inset;
+  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.04) inset;
+}
+.transitionShadow {
+  transition: box-shadow 0.1s;
 }
 html,
 body {
@@ -107,6 +110,15 @@ body {
   box-sizing: border-box;
   width: 100%;
 }
+.u-navPadding {
+  padding: 10px 0;
+}
+.u-textCenter {
+  text-align: center;
+}
+.u-footerPadding {
+  padding: 20px 0;
+}
 .Header {
   display: flex;
   flex-wrap: wrap;
@@ -114,7 +126,14 @@ body {
   border-bottom: 2px solid #C4C4C4;
   border-radius: 5px;
   background: #F0F0F0;
-  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.03) inset;
+  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.04) inset;
+}
+.Header-brand {
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  color: #4A4A4A;
+  padding: 9px 12px;
 }
 .Header-link {
   display: block;
@@ -129,9 +148,6 @@ body {
   padding: 13px 11px 11px 11px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) inset;
   transition: box-shadow 0.1s;
-}
-.Header--padding {
-  padding: 10px 0;
 }
 .TitleSection {
   display: flex;
@@ -154,10 +170,32 @@ body {
 .TitleSection-text--maxWidth {
   max-width: 600px;
 }
+.TitleSection-btnBlock {
+  display: flex;
+  width: 186px;
+  justify-content: space-between;
+}
 .TitleSection--height {
   height: 500px;
 }
 .Button {
+  display: inline-block;
+  text-decoration: none;
+  color: #F0F0F0;
+  padding: 10px 20px;
+  text-align: center;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  background: #01afeb;
+  box-sizing: border-box;
+  box-shadow: 0px -10px 10px rgba(0, 0, 255, 0.1) inset;
+}
+.Button:hover {
+  padding: 11px 20px 9px 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 255, 0.3) inset;
+  transition: box-shadow 0.1s;
+}
+.Button2 {
   display: inline-block;
   text-decoration: none;
   color: #4A4A4A;
@@ -166,28 +204,26 @@ body {
   border: 1px solid #C4C4C4;
   border-radius: 5px;
   background: #F0F0F0;
-  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.03) inset;
+  box-sizing: border-box;
+  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.04) inset;
 }
-.Button--margin {
-  margin: 15px 0;
-}
-.Button:hover {
-  background: #4D95FE;
-  color: #F0F0F0;
-  box-shadow: 0 0 10px rgba(0, 0, 255, 0.3) inset;
+.Button2:hover {
+  padding: 11px 20px 9px 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) inset;
+  transition: box-shadow 0.1s;
 }
 .CardSection {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0 10px 0;
+  padding: 20px 0;
 }
 .CardSection-cardBlock {
-  flex: 1 0 calc(33.33333333%);
+  flex: 1 0 33%;
+  padding: 12px 0;
 }
 .Card {
   display: flex;
   align-items: flex-start;
-  padding-bottom: 20px;
 }
 .Card-icon {
   padding: 2px 9px;
@@ -219,6 +255,14 @@ body {
   padding: 10px;
   box-sizing: border-box;
 }
+.PictureSection-textBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.PictureSection-textBlock--btnPadding {
+  padding: 14px 10px;
+}
 .Image {
   max-width: 100%;
 }
@@ -245,7 +289,6 @@ body {
 .FooterSection {
   border: 1px solid #C4C4C4;
   border-radius: 5px;
-  margin: 20px 0;
   padding: 12px;
   display: flex;
   align-items: center;

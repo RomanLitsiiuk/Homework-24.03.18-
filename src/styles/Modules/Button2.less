@@ -1,0 +1,18 @@
+.Button2 {
+	display: inline-block;
+	text-decoration: none;
+	color: @button2-textcolor;
+	padding: 10px 20px;
+	text-align: center;
+	border: 1px solid @border-color;
+	border-radius: 5px;
+	background: @button2-background;
+	box-sizing: border-box;
+	.shadow;
+
+	&:hover {
+		padding: 11px 20px 9px 20px;
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) inset;
+		.transitionShadow;
+	}
+}
