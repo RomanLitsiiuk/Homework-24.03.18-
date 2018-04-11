@@ -181,33 +181,28 @@ body {
 .Button {
   display: inline-block;
   text-decoration: none;
-  color: #F0F0F0;
   padding: 10px 20px;
   text-align: center;
   border: 1px solid #C4C4C4;
   border-radius: 5px;
-  background: #01afeb;
   box-sizing: border-box;
+}
+.Button--primary {
+  color: #F0F0F0;
+  background: #01afeb;
   box-shadow: 0px -10px 10px rgba(0, 0, 255, 0.1) inset;
 }
-.Button:hover {
+.Button--primary:hover {
   padding: 11px 20px 9px 20px;
   box-shadow: 0 0 15px rgba(0, 0, 255, 0.3) inset;
   transition: box-shadow 0.1s;
 }
-.Button2 {
-  display: inline-block;
-  text-decoration: none;
+.Button--white {
   color: #4A4A4A;
-  padding: 10px 20px;
-  text-align: center;
-  border: 1px solid #C4C4C4;
-  border-radius: 5px;
   background: #F0F0F0;
-  box-sizing: border-box;
   box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.04) inset;
 }
-.Button2:hover {
+.Button--white:hover {
   padding: 11px 20px 9px 20px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) inset;
   transition: box-shadow 0.1s;
